@@ -1,23 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Header from './components/Header'
 import './App.css';
+import Academic from './components/Academic';
+import Languages from './components/Languages';
+import Photo from './components/Photo';
+import SoftSkills from './components/SoftSkils';
+import Learn from './components/Learn';
+import Hobbies from './components/Hobbies';
+import Fears from './components/Fears';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://bongohive.co.zm"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome to BongoHive, hoping you can join our dev team.
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Academic />
+        <Languages />
+        <Photo />
+        <SoftSkills />
+        <Learn />
+        <Hobbies />
+        <Fears />
+        <p> &copy; 2019 Gerald Maboshe - Bongohive Internship Program </p>
+      </div>
+    );
+  }
 }
 
 export default App;

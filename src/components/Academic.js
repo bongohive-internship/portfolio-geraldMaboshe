@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 
 class Academic extends Component {
-    // academicInfo = () => {
-    //     <h1>Hello</h1>
-    // }
     render() {
         return (
             <div style={{ padding: '50px' }}>
